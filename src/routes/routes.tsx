@@ -2,8 +2,8 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "../pages/home";
 import Contact from "../pages/contact";
 import About from "../pages/about";
+import Projects from "../pages/projects";
 import Navigation from "../components/navigation";
-import Footer from "../components/footer";
 
 export const router = createBrowserRouter([
   {
@@ -11,10 +11,9 @@ export const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <div className="min-h-[calc(100vh-80px)] bg-red-900">
+        <div className="min-h-[calc(100vh-80px)] ">
           <Outlet />
         </div>
-        <Footer />
       </>
     ),
     children: [
@@ -29,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
       },
     ],
   },
