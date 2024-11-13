@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <div className="min-h-[calc(100vh-80px)] ">
+        <div className="min-h-[calc(100vh-80px)] bg-red-900">
           <Outlet />
         </div>
       </>
