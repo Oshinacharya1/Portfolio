@@ -13,8 +13,10 @@ export default function Contact() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-red-900">
-      <div className="max-w-lg w-full p-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-3xl font-semibold text-center mb-6">Contact Me</h2>
+      <div className="max-w-lg w-full p-8 bg-gray-800 bg-opacity-35 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-semibold text-center mb-6 text-white">
+          Contact Me
+        </h2>
 
         {showThankYou && (
           <div className="bg-green-100 text-green-700 text-center p-3 rounded-md mb-4">
@@ -24,7 +26,7 @@ export default function Contact() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-gray-700">Name</label>
+            <label className="block text-white">Name</label>
             <input
               type="text"
               className="w-full border border-gray-300 p-2 rounded-md"
@@ -32,7 +34,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-gray-700">Email</label>
+            <label className="block text-white">Email</label>
             <input
               type="email"
               className="w-full border border-gray-300 p-2 rounded-md"
@@ -40,7 +42,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-gray-700">Message</label>
+            <label className="block text-white">Message</label>
             <textarea
               className="w-full border border-gray-300 p-2 rounded-md"
               required
@@ -48,7 +50,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700"
+            className="w-full bg-indigo-600 text-white p-2 rounded-md hover:bg-blue-700"
           >
             Send Message
           </button>
